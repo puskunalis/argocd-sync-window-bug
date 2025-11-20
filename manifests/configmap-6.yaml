@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-wave-6
+  namespace: sync-test
+  annotations:
+    argocd.argoproj.io/sync-wave: "6"
+data:
+  wave: "6"
+  message: "Fourth ConfigMap - Wave 6"

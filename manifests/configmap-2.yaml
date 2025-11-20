@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-wave-2
+  namespace: sync-test
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+data:
+  wave: "2"
+  message: "Second ConfigMap - Wave 2"

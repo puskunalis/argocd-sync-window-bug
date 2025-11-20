@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-wave-8
+  namespace: sync-test
+  annotations:
+    argocd.argoproj.io/sync-wave: "8"
+data:
+  wave: "8"
+  message: "Fifth ConfigMap - Wave 8"
